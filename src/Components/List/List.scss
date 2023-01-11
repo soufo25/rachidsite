@@ -1,0 +1,101 @@
+
+
+ 
+.background-body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+ 
+   .card{
+    
+     position: relative;
+     object-fit: cover;
+     width: 280px;
+     height: 400px;
+     animation-name: slider;
+     animation-duration: 4s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-direction:alternate;
+     animation-delay: 2s;
+   
+ 
+     .image{
+       display: flex;
+       justify-content: center;
+       object-fit: cover;
+       border-bottom-left-radius: 80px 80px;
+       width: 400px;
+       height: 400px;
+       position: relative;
+ 
+     }
+       h1{
+       font-size: 22px;
+       font-weight: 900;
+       bottom: 5px;
+       left: 75px;
+       position: absolute;
+     }
+     
+   }
+   
+ 
+   @keyframes slider {
+       from {
+       transform: translateX(-180px);
+ 
+     }
+     to{
+       transform: translateX(90px)
+ 
+     }
+  
+ 
+   }
+ 
+   
+     
+    
+   
+   
+ 
+ 
+ .sticky{
+   position: absolute;
+   align-items: center;
+   text-align: center;
+   align-content: center;
+   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+   margin-top: 25px;
+   background-color: rgba(240, 248, 255, 0.411);
+   border-radius: 1rem;
+   border-style: 1rem solid;
+   overflow: hidden;
+
+ 
+   p{
+     font-size: 18px;
+     font-weight: 400;
+     
+   }
+   
+   button{
+     width: 6rem;
+     height: 2rem;
+     border-radius: 50%;
+     color:white;
+     background-color: lightcoral;
+     cursor: pointer;
+   }
+   
+   button:hover{
+    color: black;
+    font-size: 22px;
+    width: 12rem;
+    height: 4rem;
+
+   }
+ }
+}
